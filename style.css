@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Oswald:wght@200&family=Poppins:wght@200&family=Rajdhani&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    font-weight: 600;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid red;
+}
+
+.hambtn {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.navbtn {
+    width: 5rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+.navbtn a {
+    color: white;
+}
+
+.navbtn:hover {
+    border-radius: 10px;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("./assets/main-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logoSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.navListSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 70%;
+}
+
+.intro-section {
+    color: white;
+    margin: 0% 15%;
+    padding: 15% 0%
+}
+
+
+.intro-section h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.intro-section h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.intro-sectionbtn {
+    width: 10rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+    margin: 2%;
+    padding: 10px;
+    color: white
+}
+
+.intro-sectionbtn:hover {
+    border-radius: 10px;
+}
+
+.aboutflexCont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    align-items: center;
+    font-size: smaller;
+    background-color: white;
+    padding: 2%;
+    background: url("./assets/about-bg.svg");
+    background-repeat: no-repeat;
+    font-weight: bolder;
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    font-size: smaller;
+    background-color: white;
+    padding: 2%
+}
+
+#aboutus-heading {
+    margin-bottom: 5%
+}
+
+.aboutusSmallSection {
+    margin: 3%;
+}
+
+.faculty-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.faculty-info h1 {
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.faculty-info p {
+    font-weight: bolder;
+}
+
+.teacher,
+.courses,
+.students,
+.stories {
+    background: url("./assets/brushbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+#course {
+    margin-top: 10%;
+}
+
+.cards-container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0%;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#card1 {
+    width: 30%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    transition: .5s all ease-in-out;
+}
+
+#card2 {
+    width: 30%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    transition: .5s all ease-in-out;
+}
+
+#card3 {
+    width: 30%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    transition: .5s all ease-in-out;
+}
+
+.cards h2 {
+    margin: 3% 0%;
+}
+
+.duration {
+    width: 50%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+    cursor: pointer;
+
+    background: url("./assets/brushbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    text-align: center;
+}
+
+.enrollment {
+    width: 50%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+    cursor: pointer;
+
+    background: url("./assets/brushbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    text-align: center;
+}
+
+.enrollment:hover {
+    box-shadow: 2px 3px 10px rgba(248, 132, 151, 0.712);
+}
+
+.duration:hover {
+    box-shadow: 2px 3px 10px rgba(248, 132, 151, 0.712);
+}
+
+#card1:hover {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.158);
+    transform: scale(1.02);
+}
+
+#card2:hover {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.158);
+    transform: scale(1.02);
+}
+
+#card3:hover {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.158);
+    transform: scale(1.02);
+}
+
+.cards-container h1 {
+    margin: 3% 0%;
+}
+
+.cards-container p {
+    margin: 3% 0%;
+}
+
+#contactUs h1 {
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 70%;
+    min-height: 3rem;
+    margin: 3%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+label {
+    margin-left: 3%;
+}
+
+#submitbtn {
+    background: red;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50px;
+    margin-left: 3%;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+#submitbtn:hover {
+    border-radius: 10px;
+}
+
+#submitbtn:active {
+    background: rgba(255, 0, 0, 0.726);
+}
+
+/* responsiveness */
+@media(width<1000px) {
+    .aboutflexCont {
+        flex-direction: column;
+        background-image: none;
+        justify-content: center;
+    }
+
+    #course {
+        margin-top: 5%;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 3%
+    }
+
+    #card1,
+    #card2,
+    #card3 {
+        width: 100%;
+        margin: 5%;
+    }
+
+    .card-img {
+        width: 50%;
+    }
+}
+
+@media(width<700px) {
+    * {
+        font-size: small;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about-img {
+        width: 50%;
+    }
+
+    .hambtn {
+        display: flex;
+    }
+
+    #navbar {
+        justify-content: space-between;
+    }
+
+    .navListSection {
+        display: none;
+        border: 1px solid black;
+        position: absolute;
+        background: white;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .nav-link {
+        margin: 5%;
+    }
+
+    #home {
+        background-size: cover;
+    }
+}

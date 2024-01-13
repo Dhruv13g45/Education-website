@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <div id="home">
+        <div class="navbar-container">
+            <nav id="navbar">
+                <div class="logoSection">
+                    <img src="./assets/logo.png" alt="" width="150px" height="80px">
+                    <a href="#"><span class="logo-text">Education</span></a>
+                </div>
+                <ul class="navListSection">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#aboutUs">About Us</a></li>
+                    <li class="nav-link"><a href="#course">Courses</a></li>
+                    <li class="nav-link"><a href="#contactUs">Contact Us</a></li>
+                    <button type="button" class="navbtn"><a href="#">Apply Now</a></button>
+                </ul>
+
+                <div class="hambtn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="intro-section">
+            <h2>Finding a Answer</h2>
+            <h1>Learn Everyday</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, neque!</p>
+            <button type="button" class="intro-sectionbtn">Enroll Now</button>
+        </div>
+    </div>
+
+
+    <!-- about us section -->
+
+    <div id="aboutUs">
+        <div class="about-section">
+            <div class="aboutflexCont">
+                <img src="./assets/aboutus.png" alt="" id="about-img">
+                <div class="aboutus-text-section">
+                    <h1 id="aboutus-heading">Why Choose Us</h1>
+
+                    <div class="aboutusSmallSection">
+                        <h1> <span>
+                                <img src="./assets/fire.png" alt="" width="20px" height="20px">
+                            </span> Trending Courses</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vero eius, eligendi
+                            perspiciatis
+                            accusamus natus obcaecati</p>
+                    </div>
+                    <div class="aboutusSmallSection">
+                        <h1> <span>
+                                <img src="./assets/registor.png" alt="" width="20px" height="20px">
+                            </span> Books and Library</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vero eius, eligendi
+                            perspiciatis
+                            accusamus natus obcaecati</p>
+                    </div>
+                    <div class="aboutusSmallSection">
+                        <h1> <span>
+                                <img src="./assets/person.png" alt="" width="20px" height="20px">
+                            </span> Certified Teachers</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vero eius, eligendi
+                            perspiciatis
+                            accusamus natus obcaecati</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="faculty-info">
+                <div class="teacher">
+                    <h1>60</h1>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="courses">
+                    <h1>40</h1>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="students">
+                    <h1>900</h1>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="stories">
+                    <h1>3600+</h1>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- card section -->
+    <div id="course">
+        <div class="cards-container">
+            <div>
+                <h1>Our Popular Courses</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, soluta?</p>
+            </div>
+            <div class="cards">
+                <div id="card1">
+                    <img src="./assets/card-img1.avif" alt="" class="card-img">
+                    <h2>Visual Studio Online Course</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam perferendis laboriosam quo
+                        hic
+                        delectus. Nemo dolores quo excepturi vitae tempore.</p>
+                    <div class="buttons">
+                        <button type="button" class="duration">See Duration</button>
+                        <button type="button" class="enrollment">Enroll Now</button>
+                    </div>
+                </div>
+                <div id="card2">
+                    <img src="./assets/card-img2.jpg" alt="" class="card-img">
+                    <h2>JavaScript Tutorials</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam perferendis laboriosam quo
+                        hic
+                        delectus. Nemo dolores quo excepturi vitae tempore.</p>
+                    <div class="buttons">
+                        <button type="button" class="duration">See Duration</button>
+                        <button type="button" class="enrollment">Enroll Now</button>
+                    </div>
+                </div>
+                <div id="card3">
+                    <img src="./assets/card-img3.webp" alt="" class="card-img">
+                    <h2>React JS Course</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam perferendis laboriosam quo
+                        hic
+                        delectus. Nemo dolores quo excepturi vitae tempore.</p>
+                    <div class="buttons">
+                        <button type="button" class="duration">See Duration</button>
+                        <button type="button" class="enrollment">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact us form -->
+
+    <div id="contactUs">
+        <h1>Contact Us</h1>
+        <form id="contact-form" action="index.html">
+            <label for="name-text">Enter your Name</label>
+            <input type="text" name="name-text" id="name-text" required placeholder="Enter your Name">
+
+
+            <label for="email">Enter your E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your E-mail">
+
+            <label for="feedback">Enter your Feedback</label>
+            <textarea name="feedback" id="feedback"></textarea>
+
+            <button type="submit" id="submitbtn">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
